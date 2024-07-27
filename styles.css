@@ -1,0 +1,234 @@
+/* css reset code */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* reset code ends here*/
+
+body {
+  padding: 20px 30px;
+}
+
+.search-section {
+  width: 80%;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+}
+#search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+#search-btn {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+#search-btn:hover {
+  background-color: #585858;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: solid 1px;
+}
+
+.categories-section h2 {
+  font-size: 32px;
+  padding: 20px 0;
+}
+.categories-section ul {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.categories-section li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+  cursor: pointer;
+  background-color: #ccc;
+  padding: 8px;
+  border-radius: 5px;
+}
+.categories-section li:hover {
+  color: #585858;
+  border: solid 1px;
+}
+.selected-category {
+  background-color: black !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+#news-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.news-item {
+  padding: 20px;
+  border: solid 1px;
+}
+.news-item:first-child {
+  grid-column: span 2;
+}
+.news-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.news-item p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#show-more-section {
+  text-align: center;
+}
+
+#btn-show-more {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+#btn-show-more:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: black;
+  background-color: white;
+  border: solid 1px;
+}
